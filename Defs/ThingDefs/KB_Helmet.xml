@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>Apparel_KillBillHelmet</defName>
+		<label>bike helmet</label>
+		<description>Low air ventilation, but you can safely smash your head with something, not the bullets though.</description>
+		<graphicData>
+			<texPath>BikeHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<!-- iIconScale>1.4</uiIconScale>-->
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisite>ComplexClothing</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+                <li>TableMachining</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>10</Plasteel>
+			<Steel>30</Steel>
+			<Cloth>20</Cloth>
+		</costList>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>140</MaxHitPoints>
+			<Mass>1.5</Mass>			
+			<MarketValue>250</MarketValue>
+			<Flammability>0.7</Flammability>
+			<ArmorRating_Blunt>0.63</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.48</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.55</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>1.8</EquipDelay>
+		</statBases>
+		<!-- stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>4</costStuffCount-->
+		<apparel>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>BikeHelmet</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Anything</li>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+</Defs>
